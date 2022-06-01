@@ -11,6 +11,7 @@ ipykernel = "*"
 tqdm = "*"
 ipywidgets = "*"
 jupyterlab-git = "*"
+jupyterlab-code-formatter = "*"
 
 [dev-packages]
 

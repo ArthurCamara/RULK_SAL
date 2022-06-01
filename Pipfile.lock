@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "6a52f492787c4b15f350ea6a5f2f57a6f9b1bc148eaf5e243c2665a3451253aa"
+            "sha256": "502689296d1c22407159f2fd74a44b7213294a38c435d3259a338766b3d0eb41"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -379,6 +379,14 @@
             "index": "pypi",
             "version": "==3.4.2"
         },
+        "jupyterlab-code-formatter": {
+            "hashes": [
+                "sha256:4c426bc9bd2b4d270659b70863e8eea7efe39ba75f632f52ebfb587cd1a7e062",
+                "sha256:b05f65b4b1499feeccae0d273b8fad8d37f6c8acaa32da10d4fc00dc223d2bde"
+            ],
+            "index": "pypi",
+            "version": "==1.4.11"
+        },
         "jupyterlab-git": {
             "hashes": [
                 "sha256:6bef6e4f30797d5053f73a61b0d3e5e3957c693db85ad9e4bedf7d55da5fec76",
@@ -482,11 +490,11 @@
         },
         "nbclient": {
             "hashes": [
-                "sha256:2747ac9b385720d8a6c34f2f71e72cbe64aec6cadaadcc064a4df0b0e99c5874",
-                "sha256:b80726fc1fb89a0e8f8be1e77e28d0026b1e8ed90bc143c8a0c7622e4f8cdd9e"
+                "sha256:cdef7757cead1735d2c70cc66095b072dced8a1e6d1c7639ef90cd3e04a11f2e",
+                "sha256:f251bba200a2b401a061dfd700a7a70b5772f664fb49d4a2d3e5536ec0e98c76"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==0.6.3"
+            "version": "==0.6.4"
         },
         "nbconvert": {
             "hashes": [
@@ -961,11 +969,11 @@
         },
         "traitlets": {
             "hashes": [
-                "sha256:70815ecb20ec619d1af28910ade523383be13754283aef90528eb3d47b77c5db",
-                "sha256:f44b708d33d98b0addb40c29d148a761f44af740603a8fd0e2f8b5b27cf0f087"
+                "sha256:1530d04badddc6a73d50b7ee34667d4b96914da352109117b4280cb56523a51b",
+                "sha256:74803a1baa59af70f023671d86d5c7a834c931186df26d50d362ee6a1ff021fd"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==5.2.1.post0"
+            "version": "==5.2.2.post1"
         },
         "urllib3": {
             "hashes": [
