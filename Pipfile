@@ -12,6 +12,7 @@ tqdm = "*"
 ipywidgets = "*"
 jupyterlab-git = "*"
 jupyterlab-code-formatter = "*"
+redis = "*"
 
 [dev-packages]
 
