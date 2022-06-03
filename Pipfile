@@ -19,6 +19,9 @@ jupyterlab-git = "*"
 jupyterlab-code-formatter = "*"
 redis = "*"
 torch = {version = "*", index = "pytorch"}
+transformers = "*"
+sentence-transformers = "*"
+nltk = "*"
 
 [dev-packages]
 
