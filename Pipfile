@@ -23,6 +23,9 @@ transformers = "*"
 sentence-transformers = "*"
 nltk = "*"
 requests = "*"
+matplotlib = "*"
+sklearn = "*"
+scikit-learn = "*"
 
 [dev-packages]
 
