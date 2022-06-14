@@ -26,6 +26,8 @@ requests = "*"
 matplotlib = "*"
 sklearn = "*"
 scikit-learn = "*"
+certifi = "*"
+justext = "*"
 
 [dev-packages]
 
