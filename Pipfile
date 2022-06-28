@@ -28,6 +28,7 @@ sklearn = "*"
 scikit-learn = "*"
 certifi = "*"
 justext = "*"
+seaborn = "*"
 
 [dev-packages]
 
