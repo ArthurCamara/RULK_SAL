@@ -1,4 +1,4 @@
-"""Fetch and clean docs from waybackmachine"""
+f"""Fetch and clean docs from waybackmachine"""
 
 
 import justext
@@ -49,7 +49,6 @@ def clean_page(html_content):
         paragraphs = [""]
     total_text_len = sum([len(x.split()) for x in paragraphs])
     if total_text_len == 0:
-        print("\t Could not get anyhing good from page...")
         return (0, [])
     return (total_text_len, paragraphs)
 
@@ -61,14 +60,13 @@ def get_current(url):
 
 
 def get_from_wayback(url, timestamp=timestamp):
-    print(f"trying to fetch {url} at {timestamp}")
+    # print(f"trying to fetch {url} at {timestamp}")
     wayback_url = f"http://archive.org/wayback/available?url={urllib.parse.quote(url)}&timestamp={timestamp}"
     answer = requests.get(wayback_url)
     if answer.status_code != 200 or len(answer.json()['archived_snapshots'])== 0 or not answer.json()["archived_snapshots"]["closest"]["available"]:
-        print("\tNot on archive! Trying today....")
         return ""
     new_url = answer.json()["archived_snapshots"]["closest"]["url"]
-    print(new_url)
+    # print(new_url)
     user_agent = {'user-agent': 'Mozilla/5.0 (Windows NT 6.3; rv:36.0) Gecko/20100101 Firefox/36.0'}
     http = urllib3.PoolManager(cert_reqs="CERT_REQUIRED", ca_certs=certifi.where(), headers=user_agent)
     page_content = http.request("GET", new_url)
@@ -84,7 +82,7 @@ def get_from_wayback(url, timestamp=timestamp):
     try:
         page_content = page_content.split(start_comment)[1].split(end_comment)[1].strip()
     except:
-        return " "
+        return ""
     
     _, pars = clean_page(page_content)
     return " ".join(pars)
